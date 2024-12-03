@@ -1,10 +1,10 @@
-import MP1 from './MP_1.jsx';
+import LogPage from "./LogPage.jsx"
 
 function App() {
 
   return(
     <div>
-      <MP1></MP1>
+      <LogPage></LogPage>
     </div>
   )
 
