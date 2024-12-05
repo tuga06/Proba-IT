@@ -1,10 +1,10 @@
-import LogPage from "./LogPage.jsx"
+import ADP from "./ADP.jsx"
 
 function App() {
 
   return(
     <div>
-      <LogPage></LogPage>
+      <ADP></ADP>
     </div>
   )
 

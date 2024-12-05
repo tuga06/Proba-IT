@@ -7,6 +7,14 @@
   overflow-y: hidden !important;
 }
 
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
 .background {
   position: absolute;
   width: 100%;
@@ -283,7 +291,7 @@
 }
 
 .LD{
-  gap: 0.4vh;
+  gap: 1vh;
   display: flex;
   flex-direction: column;
 }
@@ -339,7 +347,7 @@
   width: 60%;
   height: 8vh;
   color: white;
-  font-size: 4vmin;
+  font-size: 3vmin;
   font-weight: bold;
   align-self: center;
   display: flex;
@@ -359,6 +367,27 @@
   text-decoration: underline;
   font-weight: bold;
   color: white;
+  cursor : pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.UP{
+  border:1px solid white;
+  border-color: white;
+  width: 60%;
+  height: 8vh;
+  color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
   cursor : pointer;
   user-select: none;
   -moz-user-select: none;
