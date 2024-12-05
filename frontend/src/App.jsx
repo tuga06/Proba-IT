@@ -1,10 +1,10 @@
-import ADP from "./ADP.jsx"
+import ProfilePage from "./profilePage.jsx"
 
 function App() {
 
   return(
     <div>
-      <ADP></ADP>
+      <ProfilePage></ProfilePage>
     </div>
   )
 
