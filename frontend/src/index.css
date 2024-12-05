@@ -35,6 +35,10 @@
   -o-user-select: none;
 }
 
+.logo1{
+  display: none;
+}
+
 .CR {
   width: 110vw;
   height: 62vh;
@@ -285,7 +289,7 @@
 }
 
 .linieAlb{
-  width: 28vw;
+  width: 100%;
   background-color: white;
   height: 2px;
 }
@@ -400,6 +404,44 @@
     position: relative;
     margin-left: 20vw;
     margin-top: -20vh;
+  }
+
+  .logo1{
+    display: block;
+    width: 30vw;
+    height: 40vh;
+    object-fit: contain;
+    position: relative;
+    margin-left: 34vw;
+    margin-top: -10vh;
+    margin-bottom: -12vh;
+  }
+
+  .boxDef{
+    position: relative;
+    width: 70vw;
+    max-width: 100vw;
+  }
+
+  .FP{
+    font-size: 2vh;
+  }
+
+  .inputField{
+    font-size: 2vh;
+  }
+
+  .inputField::placeholder{
+    font-size: 2vh;
+  }
+
+  .BL{
+    font-size: 3vh;
+  }
+
+  .imgBack{
+    width: 5vw;
+    height: 4vh;
   }
 
   .CR{
