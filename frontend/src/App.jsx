@@ -1,10 +1,10 @@
-import ProfilePage from "./profilePage.jsx"
+import TestPage from "./retetaPageNL.jsx"
 
 function App() {
 
   return(
     <div>
-      <ProfilePage></ProfilePage>
+      <TestPage></TestPage>
     </div>
   )
 
