@@ -21,7 +21,7 @@ function MP2() {
                     <img className="logoHome click" src={logoH}/>
                     <div className="TBR click underline">Recipes</div>
                     <div className="TBAR click underline">Add Recipe</div>
-                    <div className="TBRE click underline">Profile</div>
+                    <div className="TBRE click underline profileFix">Profile</div>
                 </div>
                 <div className="hamburger">
                 </div>

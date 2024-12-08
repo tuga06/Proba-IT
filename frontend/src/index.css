@@ -481,6 +481,10 @@
   flex-direction: column;
 }
 
+.profileFix{
+  margin-left: 30vw;
+}
+
 .imgMB{
   display: none;
 }

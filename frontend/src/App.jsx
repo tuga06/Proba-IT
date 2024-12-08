@@ -1,10 +1,10 @@
-import TestPage from "./retetaPageNL.jsx"
+import { Sort } from './PopUps'
 
 function App() {
 
   return(
     <div>
-      <TestPage></TestPage>
+      <Sort></Sort>
     </div>
   )
 

@@ -3,7 +3,7 @@ import background_d from './assets/Mesa de trabajo 1 1.png';
 import './index.css';
 
 
-function RetetaPageNL() {
+function RetetaPageL() {
 
     return(
         <div>
@@ -13,7 +13,8 @@ function RetetaPageNL() {
                     <img className="logoHome click" src={logoH}/>
                     <div className="TBR click underline">Recipes</div>
                     <div className="TBAR click underline">Add Recipe</div>
-                    <div className="TBRE click underline profileFix">Profile</div>
+                    <div className="LB click">Login</div>
+                    <div className="TBRE click underline">Register</div>
                 </div>
                 <div className="hamburger">
                 </div>
@@ -23,4 +24,4 @@ function RetetaPageNL() {
 
 }
 
-export default RetetaPageNL;
+export default RetetaPageL;
