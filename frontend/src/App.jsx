@@ -1,10 +1,10 @@
-import { Sort } from './PopUps'
+import RetetaPageL from './retetaPageL'
 
 function App() {
 
   return(
     <div>
-      <Sort></Sort>
+      <RetetaPageL></RetetaPageL>
     </div>
   )
 

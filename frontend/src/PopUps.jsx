@@ -62,8 +62,8 @@ function Filter() {
         )
     }
     return (
-        <div className='w-[10vw] h-[4vh] flex flex-col m-auto rounded-lg'>
-            <button onClick={() => setOpenFilter((prev) => !prev)} className='unselectable text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle shadow-2xl'>
+        <div className='w-[10vw] h-[4vh] flex flex-col m-auto'>
+            <button onClick={() => setOpenFilter((prev) => !prev)} className='unselectable rounded-lg text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle boxShadowFIX'>
                 Filter<img className='unselectable w-[1vw] h-[1vh] mt-[1vh]' src={dropdownA}/>
             </button>
             {
@@ -99,8 +99,8 @@ function Sort() {
         )
     }
     return(
-        <div className='w-[10vw] h-[4vh] flex flex-col m-auto rounded-lg'>
-            <button onClick={() => setOpenSort((prev) => !prev)} className='unselectable text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle shadow-2xl'>
+        <div className='w-[10vw] h-[4vh] flex flex-col m-auto'>
+            <button onClick={() => setOpenSort((prev) => !prev)} className='unselectable rounded-lg text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle boxShadowFIX'>
                 Sort<img className='unselectable w-[1vw] h-[1vh] mt-[1vh]' src={dropdownA}/>
             </button>
             {

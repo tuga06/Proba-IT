@@ -15,10 +15,10 @@ function ADP() {
             <div>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
-                    <div className="TBR click underline">Recipes</div>
-                    <div className="TBAR click underline">Add Recipe</div>
+                    <div className="TBR click Hunderline">Recipes</div>
+                    <div className="TBAR click Hunderline">Add Recipe</div>
                     <div className="LB click">Login</div>
-                    <div className="TBRE click underline">Register</div>
+                    <div className="TBRE click Hunderline">Register</div>
                 </div>
                 <div className="boxDef">
                     <div className="LD">

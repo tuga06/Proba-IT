@@ -14,9 +14,9 @@ function ProfilePage() {
             <div>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
-                    <div className="TBR click underline">Recipes</div>
-                    <div className="TBAR click underline">Add Recipe</div>
-                    <div className="TBRE click underline profileFix">Profile</div>
+                    <div className="TBR click Hunderline">Recipes</div>
+                    <div className="TBAR click Hunderline">Add Recipe</div>
+                    <div className="TBRE click Hunderline profileFix">Profile</div>
                 </div>
                 <img className="logo1 unselectable click" src={logo} />
                 <div className="PPage">

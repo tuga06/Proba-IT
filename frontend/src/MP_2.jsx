@@ -19,9 +19,9 @@ function MP2() {
             <div className="MP">
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
-                    <div className="TBR click underline">Recipes</div>
-                    <div className="TBAR click underline">Add Recipe</div>
-                    <div className="TBRE click underline profileFix">Profile</div>
+                    <div className="TBR click Hunderline">Recipes</div>
+                    <div className="TBAR click Hunderline">Add Recipe</div>
+                    <div className="TBRE click Hunderline profileFix">Profile</div>
                 </div>
                 <div className="hamburger">
                 </div>
