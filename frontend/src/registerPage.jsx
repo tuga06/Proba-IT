@@ -6,6 +6,7 @@ import logo from './assets/logo.png';
 import mail from './assets/mail.png';
 import person from './assets/person.png';
 import phone from './assets/phone.png';
+import Hamburger from './hamburger';
 import './index.css';
 
 
@@ -13,7 +14,8 @@ function RegisterPage() {
 
     return(
         <div className="unscrollable">
-            <img className="background" src={background_d} />
+            <img className="background1" src={background_d} />
+            <Hamburger/>
             <img className="logo1 unselectable click" src={logo} />
             <div>
                 <div className="TopBar">

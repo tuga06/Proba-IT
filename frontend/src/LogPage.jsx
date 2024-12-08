@@ -4,14 +4,15 @@ import background_d from './assets/Mesa de trabajo 1 1.png';
 import lock from './assets/_x34_78_x2C__Lock_x2C__Password_x2C__Password_Lock_x2C__Secure_Password_1_.png';
 import logo from './assets/logo.png';
 import mail from './assets/mail.png';
+import Hamburger from './hamburger';
 import './index.css';
-
 
 function LogPage() {
 
     return(
         <div className="unscrollable">
-            <img className="background" src={background_d} />
+            <img className="background1" src={background_d} />
+            <Hamburger/>
             <img className="logo1 unselectable click" src={logo} />
             <div>
                 <div className="TopBar">

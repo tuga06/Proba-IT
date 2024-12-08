@@ -8,15 +8,15 @@ import logo from './assets/logo.png';
 import background_d from './assets/Mesa de trabajo 1 1.png';
 import pizza from './assets/thinly-sliced-pepperoni-is-popular-pizza-topping-american-style-pizzerias-isolated-white-background-still-life 1.png';
 import twitch from './assets/Vector.png';
+import Hamburger from './hamburger';
 import './index.css';
 
 
 function MP1() {
-
     return(
         <div>
             <img className="background" src={background_d} />
-            <div className="MP">
+            <div className='MP'>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
                     <div className="TBR click Hunderline">Recipes</div>
@@ -24,8 +24,7 @@ function MP1() {
                     <div className="LB click">Login</div>
                     <div className="TBRE click Hunderline">Register</div>
                 </div>
-                <div className="hamburger">
-                </div>
+                <Hamburger/>
                 <img className="logo" src={logo} />
                 <div className="CR">
                     <div className="TRR">Top rated recipes

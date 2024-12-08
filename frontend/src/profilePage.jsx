@@ -3,14 +3,14 @@ import MB from './assets/Group 70.png';
 import logoH from './assets/Group 89.png';
 import background_d from './assets/Mesa de trabajo 1 1.png';
 import logo from './assets/logo.png';
+import Hamburger from './hamburger';
 import './index.css';
-
 
 function ProfilePage() {
 
     return(
         <div>
-            <img className="background" src={background_d} />
+            <img className="background1" src={background_d} />
             <div>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
@@ -18,6 +18,7 @@ function ProfilePage() {
                     <div className="TBAR click Hunderline">Add Recipe</div>
                     <div className="TBRE click Hunderline profileFix">Profile</div>
                 </div>
+                <Hamburger/>
                 <img className="logo1 unselectable click" src={logo} />
                 <div className="PPage">
                     <div className="boxPPALL">

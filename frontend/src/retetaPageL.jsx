@@ -1,6 +1,8 @@
 import logoH from './assets/Group 89.png';
+import logo from './assets/logo.png';
 import background_d from './assets/Mesa de trabajo 1 1.png';
 import lupa from './assets/Vector (3).png';
+import Hamburger from './hamburger';
 import './index.css';
 import { Filter, Sort } from './PopUps';
 
@@ -9,7 +11,7 @@ function RetetaPageL() {
 
     return(
         <div>
-            <img className="background" src={background_d} />
+            <img className="background1" src={background_d} />
             <div>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
@@ -17,8 +19,8 @@ function RetetaPageL() {
                     <div className="TBAR click Hunderline">Add Recipe</div>
                     <div className="TBRE click Hunderline profileFix">Profile</div>
                 </div>
-                <div className="hamburger">
-                </div>
+                <Hamburger/>
+                <img className="logo1 unselectable click" src={logo} />
                 <div className='retetaSel'>
                     <input placeholder='Search' className='retetaSearch'></input>
                     <img className='lupa' src={lupa}/>
@@ -28,7 +30,6 @@ function RetetaPageL() {
                     <Sort/>
                 </div>
                 <div>
-                    
                 </div>
             </div>
         </div>

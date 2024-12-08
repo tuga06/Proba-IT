@@ -23,6 +23,20 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  margin-top: -40vh;
+  z-index: -1;
+  transform: scale(1.01);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.background1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   transform: scale(1.01);
   user-select: none;
@@ -546,7 +560,7 @@
   display: none;
 }
 
-.hamburger{
+.hamburgerCSS{
   display: none;
 }
 
@@ -568,6 +582,7 @@
   .socials{display: none;}
   .socialsD{display: none;}
   .background{display: none;}
+  .background1{display: none;}
   .FB1{display: none;}
   .FB3{display: none;}
   .formularM{display: none;}
@@ -681,7 +696,7 @@
     width: 100%;
   }
 
-  .hamburger{
+  .hamburgerCSS{
     display: block;
   }
 
