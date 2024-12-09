@@ -5,6 +5,7 @@ import lupa from './assets/Vector (3).png';
 import Hamburger from './hamburger';
 import './index.css';
 import { Filter, Sort } from './PopUps';
+import CardReteta from './retetaCard';
 
 
 function RetetaPageL() {
@@ -29,8 +30,19 @@ function RetetaPageL() {
                     <Filter/>
                     <Sort/>
                 </div>
-                <div>
+                <div className='items-center justify-center flex flex-wrap absolute mt-[40vh] ml-[10%] w-[82%] md:gap-12 gap-4'>
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
+                    <CardReteta />
                 </div>
+                <br />
+                <br />
+                <br />
             </div>
         </div>
     )

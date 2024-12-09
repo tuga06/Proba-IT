@@ -162,17 +162,17 @@
 
 .RBAL{
   display: flex;
+  margin-top: 10vh;
   justify-content: space-between;
   align-items: center;
 }
 
 .RB {
-  margin-top: 10vmin;
   height: 25vh;
   width: 25vw;
   background-color: white;
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
 .FB1 {
@@ -190,13 +190,13 @@
 }
 
 .GL {
-  height: 25vmin;
+  height: 100%;
   background-color: #009C41;
-  width: 2px;
+  width: 3px;
 }
 
 .Post{
-  font-size: 5vmin;
+  font-size: 3vw;
   color: black;
 }
 
@@ -556,13 +556,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.imgMB{
-  display: none;
-}
+.imgMB{display: none;}
 
-.hamburgerCSS{
-  display: none;
-}
+.hamburgerCSS{display: none;}
+
+.sageataRet{display: none;}
 
 @media (max-width: 1024px) {
   .socialsD{
@@ -717,5 +715,22 @@
     width: 14vw;
     height: 16vh;
     margin: 2vh 16vw;
+  }
+
+  .RBAL{
+    margin-top: 4vh;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .GL {
+    height: 14vh;
+  }
+
+  .sageataRet{
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    z-index: 9;
   }
 }

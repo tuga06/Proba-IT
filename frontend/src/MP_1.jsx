@@ -1,5 +1,7 @@
 import insta from './assets/bi_instagram.png';
 import youtube from './assets/Group 10.png';
+import SD from './assets/Group 107.png';
+import SS from './assets/Group 108.png';
 import wave from './assets/Group 69.png';
 import MB from './assets/Group 70.png';
 import logoH from './assets/Group 89.png';
@@ -16,7 +18,7 @@ function MP1() {
     return(
         <div>
             <img className="background" src={background_d} />
-            <div className='MP'>
+            <div>
                 <div className="TopBar">
                     <img className="logoHome click" src={logoH}/>
                     <div className="TBR click Hunderline">Recipes</div>
@@ -32,17 +34,19 @@ function MP1() {
                             <div className="RB FB1">
                                 <img className='pizza' src={pizza}/>
                                 <div className="GL"></div>
-                                <div className="Post">TEST</div>
+                                <div className="Post">TEST1</div>
                             </div>
+                            <img className='sageataRet ml-[11vw]' src={SS}/>
                             <div className="RB">
                                 <img className='pizza' src={pizza}/>
                                 <div className="GL"></div>
-                                <div className="Post">TEST</div>
+                                <div className="Post">TEST2</div>
                             </div>
+                            <img className='sageataRet ml-[89.3vw]' src={SD}/>
                             <div className="RB FB3">
                                 <img className='pizza' src={pizza}/>
                                 <div className="GL"></div>
-                                <div className="Post">TEST</div>
+                                <div className="Post">TEST3</div>
                             </div>
                         </div>
                     </div>
