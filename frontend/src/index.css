@@ -1,0 +1,754 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.unscrollable {
+  overflow-y: hidden !important;
+}
+
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -40vh;
+  z-index: -1;
+  transform: scale(1.01);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.background1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1.01);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.logo {
+  width: 27vw;
+  height: 29vh;
+  object-fit: contain;
+  position: relative;
+  margin-left: 37vw;
+  margin-top: 42vh;
+  z-index: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.logo1{
+  display: none;
+}
+
+.CR {
+  width: 110vw;
+  height: 62vh;
+  margin-top: 29vh;
+  left: -5%;
+  position: relative;
+  z-index: -1;
+  background-color: #00236D;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.TRR {
+  color: white;
+  text-align: center;
+  position: relative;
+  display: block;
+  top: 3vh;
+  font-size: 6vmin;
+  z-index: 0;
+}
+
+.TopBar{
+  width: 101vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #00236D;
+  top: 0;
+  left: -0.95%;
+  border-bottom-left-radius: 4vmin;
+  border-bottom-right-radius: 4vmin;
+  box-shadow: 0 1vmin 20px #021B2C;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.logoHome{
+  position: relative;
+  object-fit: contain;
+  left: 4%;
+  width: 7vw;
+  height: 7vh;
+  margin-right: -20vw;
+}
+
+.TBR{
+  color: white;
+  margin-right: -26vw;
+  font-size: 1.5vw;
+  user-select: none;
+}
+
+.TBAR{
+  color: white;
+  font-size: 1.5vw;
+  user-select: none;
+}
+
+.TBRE{
+  color: white;
+  font-size: 1.5vw;
+  margin-right: 5vw;
+  margin-left: -27vw;
+  user-select: none;
+}
+
+.LB{
+  font-size: 1.5vw;
+  padding: 1vmin 3vmin;
+  border-style: solid;
+  border-radius: 2vmin;
+  border-color: white;
+  color: white;
+  border-width: 0.3vmin;
+  margin-left: 27vw;
+  user-select: none;
+}
+
+.click:hover{
+  cursor : pointer;
+}
+
+.Hunderline:hover{
+  text-decoration: underline;
+}
+
+.RBAL{
+  display: flex;
+  margin-top: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RB {
+  height: 25vh;
+  width: 25vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.FB1 {
+  margin-left: 10vw;
+}
+
+.FB3 {
+  margin-right: 12vw;
+}
+
+.pizza{
+  object-fit: cover;
+  width: 13vw;
+  height: 25vh;
+}
+
+.GL {
+  height: 100%;
+  background-color: #009C41;
+  width: 3px;
+}
+
+.Post{
+  font-size: 3vw;
+  color: black;
+}
+
+.ContUs{
+  margin-top:5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.titleCU{
+  color: #009C41;
+  font-size: 5vmin;
+  font-weight: bold;
+}
+
+.formularCU{
+  margin-top: 6vh;
+  display: flex;
+  gap: 8vw;
+}
+
+.formularDate{
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 24vh;
+  gap: 4vh;
+}
+
+.formularM{
+  width: 100%;
+}
+
+.formularMT{
+  display: none;
+}
+
+.textCU{
+  color:#009C41;
+  border-color: #009C41;
+  size: 1vmin;
+  font-size: 2vmin;
+  resize: none;
+  overflow-y: hidden;
+  border-width: 0.3vmin;
+}
+
+.textCU::placeholder{
+  color:#009C41;
+  font-size: 2vmin;
+}
+
+.submitCU{
+  margin-top: 2vh;
+  color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
+  width: 10%;
+  background-color: #009C41;
+  border-radius: 2vmin;
+  float: right;
+  user-select: none;
+}
+
+.socials{
+  position: absolute;
+  bottom: -146%;
+  margin-left: -4vw;
+  width: 100%;
+  height: 12%;
+}
+
+.socialsD{
+  display: flex;
+  position: absolute;
+  margin-left: 40%;
+  gap: 2vw;
+  bottom: -142%;
+}
+
+.imgS{
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.inputField{
+  border: none;
+  background-color:#00236D;
+  color: white;
+  width: 100%;
+  resize: none;
+  font-size: 1.5vmax;
+  height: 4vh;
+}
+
+.impartire{
+  display: flex;
+  flex-direction: row;
+}
+
+.inputField::placeholder{
+  color:white;
+}
+
+.inputField:focus{
+  outline: none !important;
+}
+
+.LD{
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.linieAlb{
+  width: 100%;
+  background-color: white;
+  height: 2px;
+}
+
+.imgBack{
+  object-fit: contain;
+  width: 3vw;
+  height: 3vh;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.boxDef{
+  text-align: center;
+  background-color: #00236D;
+  position: fixed;
+  inset: 0px;
+  width: max-content;
+  height: max-content;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  border-radius: 4%;
+}
+
+.boxTitle{
+  color: white;
+  font-size: 5vmin;
+  font-weight: bold;
+}
+
+.BL{
+  background-color: #009C41;
+  width: 60%;
+  height: 8vh;
+  color: white;
+  font-size: 3vmin;
+  font-weight: bold;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor : pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.FP{
+  font-size: 2vmin;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+  cursor : pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.UP{
+  border:1px solid white;
+  border-color: white;
+  width: 60%;
+  height: 8vh;
+  color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  cursor : pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.imgBucatar{
+  width: 6vw;
+  height: 22vh;
+  margin: 2vh 6vw;
+}
+
+.ProfilNume{
+  color: white;
+}
+
+.boxPP1{
+  text-align: left;
+  background-color: #00236D;
+  position: relative;
+  inset: 0px;
+  width: max-content;
+  height: max-content;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  border-radius: 4%;
+}
+
+.boxPP2{
+  text-align: left;
+  background-color: #00236D;
+  position: relative;
+  inset: 0px;
+  height: max-content;
+  width: 24vw;
+  max-height: 100dvh;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.boxPPALL{
+  text-align: center;
+  position: relative;
+  inset: 0px;
+  width: max-content;
+  height: max-content;
+  max-height: 100dvh;
+  margin: auto;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24vh;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: row;
+  gap: 8vw;
+}
+
+.BLF{
+  position: relative;
+  width: 20vw !important;
+}
+
+.PPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.profileFix{
+  margin-left: 30vw;
+}
+
+.retetaSel{
+  position: absolute;
+  z-index: 1;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%;
+  height: 5vh;
+  width: 40vw;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+}
+
+.retetaSearch{
+  z-index: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 4vh;
+  padding-left: 0.4vw;
+  font-size: 2vh;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.retetaSearch:focus{
+  outline: none;
+  color: black;
+}
+
+.retetaSearch::placeholder{
+  font-size: 2vh;
+}
+
+.lupa{
+  margin-top: 0.8vh;
+  margin-right: 0.3vw;
+  height: 70%;
+  width: 4%;
+}
+
+.dropDownuri{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30vh;
+  margin-left: 36%;
+  gap: 10vw;
+}
+
+.boxShadowFIX{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgMB{display: none;}
+
+.hamburgerCSS{display: none;}
+
+.sageataRet{display: none;}
+
+@media (max-width: 1024px) {
+  .socialsD{
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  .socialsD{
+    margin-left: 36%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .TopBar{display: none;}
+  .socials{display: none;}
+  .socialsD{display: none;}
+  .background{display: none;}
+  .background1{display: none;}
+  .FB1{display: none;}
+  .FB3{display: none;}
+  .formularM{display: none;}
+
+  .logo {
+    width: 60vw;
+    height: 80vh;
+    object-fit: contain;
+    position: relative;
+    margin-left: 20vw;
+    margin-top: -20vh;
+  }
+
+  .logo1{
+    display: block;
+    width: 30vw;
+    height: 40vh;
+    object-fit: contain;
+    position: relative;
+    margin-left: 34vw;
+    margin-top: -10vh;
+    margin-bottom: -12vh;
+  }
+
+  .boxDef{
+    position: relative;
+    width: 70vw;
+    max-width: 100vw;
+  }
+
+  .FP{
+    font-size: 2vh;
+  }
+
+  .inputField{
+    font-size: 2vh;
+  }
+
+  .inputField::placeholder{
+    font-size: 2vh;
+  }
+
+  .BL{
+    font-size: 3vh;
+  }
+
+  .imgBack{
+    width: 5vw;
+    height: 4vh;
+  }
+
+  .CR{
+    margin-top: -20vh;
+    height: 34vh;
+  }
+
+  .titleCU{
+    text-align: center;
+    font-size: 8vmin;
+  }
+
+  .textCU{
+    font-size: 2.7vh;
+    border-width: 0.5vmin;
+  }
+
+  .textCU::placeholder{
+    font-size: 2.7vh;
+  }
+
+  .formularCU{
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .formularMT{
+    display: block;
+    height: 40vh;
+  }
+
+  .formularDate{
+    width: 100%;
+    height: 60vh;
+  }
+
+  .submitCU{
+    margin-top: 1.6vh;
+    margin-right: 27%;
+    width: 40%;
+    height: 30%;
+    font-size: 2vh;
+  }
+  
+  .RB{
+    margin-left: 20vw;
+    width: 76%;
+    margin-right: 24vw;
+    height: 16%;
+  }
+
+  .pizza{
+    width: 30vw;
+    height: 14vh;
+  }
+
+  .imgMB{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: 14vh;
+    width: 100%;
+  }
+
+  .hamburgerCSS{
+    display: block;
+  }
+
+  .boxPPALL{
+    padding-top: 6vh;
+    flex-direction: column;
+  }
+
+  .BLF{
+    width: 40vw !important;
+  }
+
+  .boxPP2{
+    width: 50vw;;
+  }
+
+  .imgBucatar{
+    width: 14vw;
+    height: 16vh;
+    margin: 2vh 16vw;
+  }
+
+  .RBAL{
+    margin-top: 4vh;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .GL {
+    height: 14vh;
+  }
+
+  .sageataRet{
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    z-index: 9;
+  }
+
+  .retetaSel{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    height: 5vh;
+    width: 76vw;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+  }
+
+  .dropDownuri{
+    margin-top: 10vh;
+    margin-left: 10%;
+    gap: 10vw;
+  }
+}
