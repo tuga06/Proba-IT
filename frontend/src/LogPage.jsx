@@ -16,11 +16,11 @@ function LogPage() {
             <img className="logo1 unselectable click" src={logo} />
             <div>
                 <div className="TopBar">
-                    <img className="logoHome click" src={logoH}/>
-                    <div className="TBR click Hunderline">Recipes</div>
-                    <div className="TBAR click Hunderline">Add Recipe</div>
-                    <div className="LB click">Login</div>
-                    <div className="TBRE click Hunderline">Register</div>
+                    <img onClick={() => {window.location.href="/"}} className="logoHome click" src={logoH}/>
+                    <a href='/retete-NL' className="TBR click Hunderline">Recipes</a>
+                    <a href='/add-recipe' className="TBAR click Hunderline">Add Recipe</a>
+                    <a href='/login' className="LB click">Login</a>
+                    <a href='/register' className="TBRE click Hunderline">Register</a>
                 </div>
                 <div className="boxDef">
                     <div className="boxTitle">Logheăza-te,<br />chiorăie maţele!</div>
@@ -37,7 +37,7 @@ function LogPage() {
                         <div className="linieAlb"/>
                     </div>
                     <div className="BL">Log in</div>
-                    <div className="FP">Forgot Password</div>
+                    <a href='/forgot-pass' className="FP">Forgot Password</a>
                 </div>
                 <img className="imgMB unselectable" src={MB}/>
             </div>

@@ -20,23 +20,23 @@ function Hamburger() {
     const SideBar = () => {
         return (
         <div className='w-[100%] h-[179vh] flex flex-row absolute'>
-            <div className='w-2/5 z-10 bg-white/[0.7] h-full backdrop-blur-sm flex flex-col gap-[3vh]'>
+            <div className='w-2/5 z-[20] bg-white/[0.7] h-full backdrop-blur-sm flex flex-col gap-[3vh]'>
                 <div className='text-center flex flex-col gap-[1vh] items-center justify-center'>
                     <br className='unselectable' />
-                    <div className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Home</div>
-                    <div className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Recipes</div>
-                    <div className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Add recipes</div>
+                    <a href='/' className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Home</a>
+                    <a href='/retete-NL' className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Recipes</a>
+                    <a href='/add-recipe' className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Add recipes</a>
                 </div>
                 <div className='text-center flex flex-col gap-[1vh] items-center justify-center'>
-                    <div className='unselectable cursor-pointer w-[40%] border border-[#00236D] rounded-md hover:bg-[#e2ffeb] text-center'>Profile</div>
+                    <a href='/profile' className='unselectable cursor-pointer w-[40%] border border-[#00236D] rounded-md hover:bg-[#e2ffeb] text-center'>Profile</a>
                     <div className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Logout</div>
                 </div>
                 <div className='text-center flex flex-col gap-[1vh] items-center justify-center'>
-                    <div className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Register</div>
-                    <div className='unselectable cursor-pointer w-[40%] border border-[#00236D] rounded-md hover:bg-[#e2ffeb] text-center'>Login</div>
+                    <a href='/register' className='unselectable cursor-pointer w-full hover:bg-[#e2ffeb]'>Register</a>
+                    <a href='/login' className='unselectable cursor-pointer w-[40%] border border-[#00236D] rounded-md hover:bg-[#e2ffeb] text-center'>Login</a>
                 </div>
             </div>
-            <div onClick={() => setOpenSB(false)} className='w-3/5 z-10 bg-white/[0.3] h-full backdrop-blur-sm'></div>
+            <div onClick={() => setOpenSB(false)} className='w-3/5 z-[20] bg-white/[0.3] h-full backdrop-blur-sm'></div>
         </div>
         )
     }

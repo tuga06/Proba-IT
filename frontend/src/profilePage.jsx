@@ -13,10 +13,10 @@ function ProfilePage() {
             <img className="background1" src={background_d} />
             <div>
                 <div className="TopBar">
-                    <img className="logoHome click" src={logoH}/>
-                    <div className="TBR click Hunderline">Recipes</div>
-                    <div className="TBAR click Hunderline">Add Recipe</div>
-                    <div className="TBRE click Hunderline profileFix">Profile</div>
+                    <img onClick={() => {window.location.href="/"}} className="logoHome click" src={logoH}/>
+                    <a href='/retete-NL' className="TBR click Hunderline">Recipes</a>
+                    <a href='/add-recipe' className="TBAR click Hunderline">Add Recipe</a>
+                    <a href='/profile' className="TBRE click Hunderline profileFix">Profile</a>
                 </div>
                 <Hamburger/>
                 <img className="logo1 unselectable click" src={logo} />

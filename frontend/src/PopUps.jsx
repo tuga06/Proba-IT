@@ -15,7 +15,7 @@ function Filter() {
     const [openFilter, setOpenFilter] = useState(false);
     const DropDownRating = () => {
         return (
-            <div className='flex flex-col bg-[#D9D9D9] rounded-b-lg'>
+            <div className='flex flex-col bg-[#D9D9D9] rounded-b-lg z-[9]'>
                 <ul className='flex flex-col p-2'>
                     <li>
                         <div className='flex flex-row'>
@@ -66,9 +66,9 @@ function Filter() {
         )
     }
     return (
-        <div className='w-[10vw] h-[4vh] flex flex-col m-auto'>
+        <div className='w-32 h-7 sm:w-24 md:w-32 lg:w-48 flex flex-col ml-[6vw] lg:ml-[-3vw] md:ml-[-6vw] sm:ml-[-8vw] min-[480px]:ml-[-12vw] min-[480px]:w-24'>
             <button onClick={() => setOpenFilter((prev) => !prev)} className='unselectable rounded-lg text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle boxShadowFIX'>
-                Filter<img className='unselectable w-[1vw] h-[1vh] mt-[1vh]' src={dropdownA}/>
+                Filter<img className='unselectable w-2vw min-[480px]:w-[1vw] h-[1vh] mt-[0.4vh] min-[480px]:mt-[1vh]' src={dropdownA}/>
             </button>
             {
                 openFilter && <DropDownRating />
@@ -81,7 +81,7 @@ function Sort() {
     const [openSort, setOpenSort] = useState(false);
     const DropDownSort = () => {
         return(
-            <div className='flex flex-col bg-[#D9D9D9] rounded-b-lg'>
+            <div className='flex flex-col bg-[#D9D9D9] rounded-b-lg z-[9]'>
                 <ul className='flex flex-col p-2'>
                     <li className='cursor-pointer hover:bg-[#a6a6a6]'>
                         <div className='unselectable font-bold text-center'>Top rated</div>
@@ -103,9 +103,9 @@ function Sort() {
         )
     }
     return(
-        <div className='w-[10vw] h-[4vh] flex flex-col m-auto'>
+        <div className='w-32 h-7 sm:w-24 md:w-32 lg:w-48 flex flex-col m-auto min-[480px]:w-24'>
             <button onClick={() => setOpenSort((prev) => !prev)} className='unselectable rounded-lg text-[2vmin] font-bold flex flex-row gap-[4vw] place-content-center text-center align-middle boxShadowFIX'>
-                Sort<img className='unselectable w-[1vw] h-[1vh] mt-[1vh]' src={dropdownA}/>
+                Sort<img className='unselectable w-2vw min-[480px]:w-[1vw] h-[1vh] mt-[0.4vh] min-[480px]:mt-[1vh]' src={dropdownA}/>
             </button>
             {
                 openSort && <DropDownSort />
@@ -114,13 +114,13 @@ function Sort() {
     )
 }
 
-function RetetaDesk() {
+function Reteta() {
 
     return(
-        <div>
+        <div className='absolute top-0 bg-white left-0 z-10 h-full ronded-lg'>
             <img className='py-4 px-8 right-0 cursor-pointer absolute' src={close}/>
             <div className='flex flex-col gap-[1vh] p-10'>
-                <div className='flex flex-row gap-[2vw]'>
+                <div className='flex flex-col md:flex-row gap-[2vw] max-[768px]:items-center max-[768px]:justify-center'>
                     <div>
                         <img className='unselectable object-scale-down' src={pizza}/>
                     </div>
@@ -132,7 +132,7 @@ function RetetaDesk() {
                         <div className='text-lg'>Author:</div>
                         <div className='text-2xl'>Nume Prenume</div>
                     </div>
-                    <div className='flex flex-col 2xl:ml-[40vw] lg:ml-[20vw] pt-16 gap-[2vh] items-center justify-center'>
+                    <div className='flex flex-col 2xl:ml-[40vw] lg:ml-[20vw] pt-16 gap-[2vh] items-center justify-center max-[768px]:hidden'>
                         <div className='unselectable text-4xl'>Rate this recipe</div>
                         <div className='flex flex-row gap-[1vw]'>
                             <img className='unselectable object-scale-down' src={SG} />
@@ -153,19 +153,21 @@ function RetetaDesk() {
                         Semnat JamilaCuisine
                     </div>
                 </div>
+                <div className='hidden flex-col 2xl:ml-[40vw] lg:ml-[20vw] pt-16 gap-[2vh] items-center justify-center max-[768px]:flex'>
+                    <div className='unselectable text-4xl'>Rate this recipe</div>
+                    <div className='flex flex-row gap-[1vw]'>
+                        <img className='unselectable object-scale-down' src={SG} />
+                        <img className='unselectable object-scale-down' src={SG} />
+                        <img className='unselectable object-scale-down' src={SG} />
+                        <img className='unselectable object-scale-down' src={SG} />
+                        <img className='unselectable object-scale-down' src={SLG} />
+                    </div>
+                    <button className='unselectable appearance-none cursor-pointer border border-[#009C41] bg-[#009C41] text-white font bold rounded-xl w-28 font-bold px-6 py-1'>Submit</button>
+                </div>
             </div>
         </div>
     )
 }
 
-function RetetaMob() {
-
-    return(
-        <div>
-            
-        </div>
-    )
-}
-
-export { Filter, RetetaDesk, RetetaMob, Sort };
+export { Filter, Reteta, Sort };
 

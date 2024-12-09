@@ -733,4 +733,22 @@
     object-fit: contain;
     z-index: 9;
   }
+
+  .retetaSel{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    height: 5vh;
+    width: 76vw;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+  }
+
+  .dropDownuri{
+    margin-top: 10vh;
+    margin-left: 10%;
+    gap: 10vw;
+  }
 }
